@@ -2,12 +2,15 @@
   (:require [status-im.components.styles :as styles]))
 
 (def component-styles
-  {:status-bar            {:default     {:height    0
-                                         :bar-style "dark-content"
-                                         :color     styles/color-white}
-                           :main        {:height    0
-                                         :bar-style "dark-content"
-                                         :color     styles/color-white}
+  {:status-bar            {:default     {:height       25
+                                         :bar-style    "dark-content"
+                                         :elevation    2
+                                         :translucent? true
+                                         :color        styles/color-white}
+                           :main        {:height       25
+                                         :bar-style    "dark-content"
+                                         :translucent? true
+                                         :color        styles/color-white}
                            :gray        {:height    0
                                          :bar-style "dark-content"
                                          :color     styles/color-light-gray}
@@ -15,10 +18,11 @@
                                          :bar-style    "light-content"
                                          :translucent? true
                                          :color        styles/color-transparent}
-                           :overlay     {:height       0
+                           :overlay     {:height       25
                                          :bar-style    "dark-content"
+                                         :elevation    2
                                          :translucent? true
-                                         :color        styles/color-transparent}
+                                         :color        styles/color-white}
                            :modal       {:height    0
                                          :bar-style "light-content"
                                          :color     styles/color-black}}
